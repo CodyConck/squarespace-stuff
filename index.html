@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="dropdown">
+      <h3>Fractional Recruiting<span class="arrow"></span></h3>
+      <div class="answer">
+        <p>
+          Rent our team for 10-15 hours a week. You will get weekly status
+          reports, market feedback, detailed candidates submissions, and a
+          curated list of profiles we interviewed that could be a fit for future
+          hiring needs.
+        </p>
+        <a href="https://www.harmonysolutions.io/contact-us">Learn More</a>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".dropdown h3").click(function () {
+        $(this).toggleClass("down");
+        $(this).nextUntil("h3").slideToggle("slow");
+      });
+    });
+  </script>
+</html>

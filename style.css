@@ -1,0 +1,53 @@
+.dropdown {
+  margin-bottom: 3vw; /*spacing between boxes */
+}
+
+.dropdown h3 {
+  font-size: 1.1rem; /*question font size */
+  font-family: "Manrope Regular";
+  background: #fdfce9; /*box background colour */
+  text-align: center;
+  color: black; /*question text colour*/
+  padding: 15px 30px;
+  margin: auto 0px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.dropdown h3:hover {
+  filter: opacity(90%);
+}
+
+.dropdown p {
+  /* answer italic */
+  color: white;
+}
+.dropdown a {
+  /* link underline */
+  text-decoration: underline;
+}
+
+.answer {
+  display: none;
+  background: #e26804;
+  margin-top: 2vw; /*space between question and answer */
+  border-left: #e3e3e3 solid 1px; /*grey line beside answer */
+  padding-left: 2vw; /*space between line and answer */
+  border-radius: 12px;
+}
+
+.arrow::after {
+  content: " ▸";
+}
+.down .arrow::after {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+/* .arrow::after {
+  content: " ▸";
+  transition: transform 0.3s ease-in-out;
+}
+
+#toggle:target .arrow {
+  transform: rotate(90deg);
+} */
